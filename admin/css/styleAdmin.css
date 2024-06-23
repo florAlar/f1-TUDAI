@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Play", sans-serif;
+    ;
+}
+
+a {
+    text-decoration: none;
+    color: #f1f1f1;
+}
+
+.buttonMas {
+    font-size: 30px;
+    background-color: #e10600;
+    border-radius: 150px;
+    color: white;
+    padding: 0px 9px;
+}
+
+.botonAdmin {
+    background-color: #e10600;
+    color: white;
+    margin-top: 3vh;
+    padding: 5px 20px;
+    border-radius: 8px;
+    max-width: fit-content;
+}
+
+.titleUserAdmin {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerAdmin {
+    padding: 0;
+}
+
+.adminListaDeUsuarios {
+    background-color: #05050575;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 10px;
+
+}
+
+.adminCardUsuario {
+    border: 1px solid rgba(255, 0, 0, 0.192);
+    width: auto;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.adminButtonGroup {
+    margin-top: 0px;
+}
+
+.navAdmin {
+    background-color: black;
+}
+
+.menuAdmin {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.menuAdmin li {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.titleUserAdmin {
+    font-size: 30px;
+    margin-bottom: 7px;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.usuariosAdmin {
+    display: grid;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.filtrarLista {
+    margin-top: 50px;
+}
+
+.contenedorFormAdmin {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.contenedorFormAdmin input,
+select {
+    padding: 7px;
+    border-radius: 10px;
+}
+
+.formularioModificar {
+    gap: 15px;
+}
+
+.formularioModificar input,
+.formularioModificar select {
+    padding: 5px;
+    background-color: transparent;
+    color: white;
+    border-radius: 0px;
+
+    border: 0px;
+    border-bottom: 1px solid #e10600;
+
+}
+
+.formularioModificar option {
+    background-color: rgb(20, 20, 20);
+
+}
+
+@media(width>768px) {
+    .headerAdmin {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menuAdmin {
+        justify-content: space-around;
+    }
+
+    .usuariosAdmin {
+        margin-top: 20px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .usuariosAdmin .columna {
+        width: 45%;
+    }
+
+
+}
+
+.inputBuscar {
+    margin-top: 15px;
+    padding: 10px;
+    width: 70%;
+    border-radius: 15px;
+
+}
+
+.resultadosBusqueda {
+    margin-top: 15px;
+}

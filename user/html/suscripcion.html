@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1</title>
+    <link rel="stylesheet" href="../css/mainStyle.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="menuMobile">
+            <a href="../index.html"><img class="mainLogo" src="../assets/mainLogoBco.png" alt="logo f1"></a>
+            <!-- -->
+            <img src="../assets/foco.png" alt="" class="iconoModoOscuro" id="botonModoOscuro">
+            <button id="botonMenuHamburguesa" class="botonMenuHamburguesa"><img src="../assets/1.png" alt=""></button>
+        </div>
+
+
+        <nav class="navegacionHeader" id="navegacionMobile">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./cronograma.html">Cronograma</a></li>
+                <li><a href="./posiciones.html">Posiciones</a></li>
+                <li><a href="./suscripcion.html">Suscribirse</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <main class="seccionContacto">
+
+        <div class="contenedorFormulario">
+            <div class="encabezadoContacto">
+                <img src="../assets/mainLogo.png" class="mainLogo" alt="logo f1">
+                <h1 class="textoBlanco">TV Access</h1>
+            </div>
+
+            <p class="textoBlanco marginTop">Obtén tiempos en vivo, la tabla de posiciones oficial, el seguidor de
+                pilotos y lo
+                mejor de la radio de
+                los equipos, además del archivo de Fórmula 1.
+            </p>
+
+            <form class="formulario" id="formulario">
+                <h2 class="textoRojo">Crear Cuenta</h2>
+
+                <label for=""></label>
+                <input type="text" name='nombre' required placeholder="Nombre">
+
+                <label for=""></label>
+                <input type="text" name='apellido' required placeholder="Apellido">
+
+                <label for=""></label>
+                <input name="nombreDeUsuario" required type="text"
+                    placeholder="Nombre de usuario (requerido para logg in)">
+
+                <label for=""></label>
+                <input name='mail' required type="email" placeholder="Mail">
+
+                <label for=""></label>
+                <input name='password' required type="password" placeholder="New Password">
+
+                <label for=""> Elegí tu plan </label>
+                <select name='plan' class="inputOpcionesPlan" required name="plan" placeholder="Elegí tu plan">
+                    <option value="premium anual">Suscripcion Premium Anual </option>
+                    <option value="premium mensual">Suscripcion Premium Mensual</option>
+                    <option value="standard anual">Suscripcion Standard Anual </option>
+                    <option value="standard mensual">Suscripcion Standard Mensual </option>
+                </select>
+
+                <!-- captcha -->
+                <div class="contenedorCaptcha">
+                    <img id="imagenCaptcha" class="imagenCaptcha" src="" alt="">
+                    <input name="inputUsuario" class="inputCaptcha" id="inputCaptcha" type="text"
+                        placeholder="Ingresa el captcha">
+                </div>
+
+                <button class="botonPrincipal" id="botonFormulario"> Suscribirse </button>
+
+
+                <div class="formularioEnviado" id="formularioEnviado">
+                    <img id="checkCaptcha" src="" class="logoRedSocial" alt="">
+                    <p id="mensajeCaptcha"></p>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <div class="prefooter">
+        <a href="https://x.com/f1"><img class="logoRedSocial" src="../assets/xlogo.png" alt="logo x"></a>
+        <a href="https://www.instagram.com/f1/"><img class="logoRedSocial" src="../assets/iglogo.png"
+                alt="logo instagram"></a>
+        <a href="https://www.youtube.com/@Formula1"><img class="logoRedSocial" src="../assets/ytlogo.png"
+                alt="logo youtube"></a>
+    </div>
+
+    <footer class="footer">
+
+        <img class="logoFooter" src="../assets/mainLogo.png" alt="">
+        <nav class="navegacionFooter">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./cronograma.html">Cronograma</a></li>
+                <li><a href="./posiciones.html">Posiciones</a></li>
+                <li><a href="./suscripcion.html">Suscribirse</a></li>
+            </ul>
+        </nav>
+
+    </footer>
+    <script src="../js/formSuscripcion.js"></script>
+    <script src="../js/mainScript.js"></script>
+</body>
+
+</html>

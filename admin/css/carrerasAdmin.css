@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0;
+    font-family: "Play", sans-serif;
+
+}
+
+.botonAdminCarreras {
+    background-color: #e10600;
+    color: white;
+
+    padding: 5px 5px;
+    border-radius: 8px;
+    max-width: fit-content;
+}
+
+main {
+    padding: 20px;
+}
+
+
+.tablaDePosicionesAdmin {
+    width: 100%;
+    margin-top: 15px;
+
+}
+
+.tituloCarreras {
+    font-size: 30px;
+    margin-bottom: 7px;
+}
+
+
+.rowCarrerasAdmin {
+    background-color: black;
+    padding: 7px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+
+}
+
+.celdaFijaAdmin {
+    background-color: black;
+    text-align: center;
+    width: 90%;
+
+}
+
+.marginTop {
+    margin-top: 15px;
+}
+
+.cuerpoTablaAdmin {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+
+    gap: 5px;
+}
+
+.contenedorFormPiloto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+
+.contenedorFormPiloto input {
+    padding: 5px;
+    border-radius: 15px;
+
+}
+
+.row {
+    background-color: black;
+    padding: 7px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    justify-content: space-between;
+}
+
+tr .rowPilotosAdmin {
+    background-color: black;
+    padding: 7px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    border-radius: 15px;
+    justify-content: space-between;
+
+}

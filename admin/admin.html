@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styleAdmin.css">
+    <link rel="stylesheet" href="../user/css/mainStyle.css">
+
+</head>
+
+<body>
+    <header class="headerAdmin">
+        <div class="menuMobile padding">
+            <a href="../user/index.html"><img class="mainLogo" src="../user/assets/mainLogoBco.png" alt="logo f1"></a>
+            <h1>Pit Lane</h1>
+        </div>
+        <nav class="navAdmin">
+            <ul class="menuAdmin">
+                <li>
+                    <img src="../user/assets/userIcon.png" class="iconMenu" alt="">
+                    <a class="btnParcialAdmin" href="./html/usuarios.html">usuarios</a>
+                </li>
+                <li><img src="../user/assets/raceIcon.png" class="iconMenu" alt="">
+                    <a class="btnParcialAdmin" href="./html/carreras.html">carreras</a>
+                </li>
+                <li><img src="../user/assets/pilotoIcon (1).png" class="iconMenu" alt="">
+                    <a class="btnParcialAdmin" href="./html/pilotos.html">pilotos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div id="contenedorPaginaAdmin">
+
+        <main class="backgroundOscuro padding">
+            <div class="tituloUsuariosAdmin">
+                <div class="titleUserAdmin">
+                    <h2>Administrar usuarios</h2>
+                </div>
+            </div>
+            <section class="usuariosAdmin">
+                <div class="columna">
+                    <form id="contenedorFormAdmin" class="contenedorFormAdmin">
+
+                        <h1 class="textoRojo"> Crear Nueva Cuenta como Admin</h1>
+                        <input type="text" placeholder="Nombre" name="nombre" required>
+                        <input type="text" placeholder="Apellido" name="apellido" required>
+                        <input type="text" placeholder="Nombre de Usuario" name="nombreDeUsuario" required>
+                        <input type="mail" placeholder="mail" name="mail" required>
+                        <input type="password" placeholder="Password" name="password" required>
+
+                        <select type="text" placeholder="" name="plan" required>
+                            <option value="premium anual">Suscripcion Premium Anual </option>
+                            <option value="premium mensual">Suscripcion Premium Mensual</option>
+                            <option value="standard anual">Suscripcion Standard Anual </option>
+                            <option value="standard mensual">Suscripcion Standard Mensual </option>
+                        </select>
+
+                        <button class="botonPrincipal" id="agregarUsuarioAdmin">Agregar</button>
+
+                    </form>
+
+
+                </div>
+                <div class="columna">
+                    <h2 class="textoRojo">Usuarios registrados</h2>
+                    <div class="adminListaDeUsuarios" id="adminListaDeUsuarios">
+
+                        <!-- aca va la magia -->
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="./js/users.js"></script>
+</body>
+
+</html>

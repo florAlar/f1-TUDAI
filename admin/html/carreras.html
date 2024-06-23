@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../user/css/mainStyle.css">
+    <link rel="stylesheet" href="../css/styleAdmin.css">
+    <link rel="stylesheet" href="../css/carrerasAdmin.css">
+
+</head>
+
+<body>
+    <div id="contenedorPaginaAdmin">
+        <header class="headerAdmin">
+            <div class="menuMobile padding">
+                <a href="../../user/index.html"><img class="mainLogo" src="../../user/assets/mainLogoBco.png"
+                        alt="logo f1"></a>
+                <h1>Pit Lane</h1>
+            </div>
+            <nav class="navAdmin">
+                <ul class="menuAdmin">
+                    <li>
+                        <img src="../../user/assets/userIcon.png" class="iconMenu" alt="">
+                        <a class="btnParcialAdmin" href="../admin.html">usuarios</a>
+                    </li>
+                    <li><img src="../../user/assets/raceIcon.png" class="iconMenu" alt="">
+                        <a class="btnParcialAdmin" href="./carreras.html">carreras</a>
+                    </li>
+                    <li><img src="../../user/assets/pilotoIcon (1).png" class="iconMenu" alt="">
+                        <a class="btnParcialAdmin" href="../html/pilotos.html">pilotos</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="backgroundOscuro padding ">
+            <main class="backgroundOscuro padding ">
+                <div class="titleUserAdmin">
+                    <h2 class="marginTop "> Administrar Carreras </h2>
+                    <a href="" class="buttonMas" id="mostrarMasFormulario">+</a>
+                </div>
+                <div class="oculto" id="agregarCarreras">
+                    <h2 class="textoRojo">Agregar Carreras</h2>
+                    <form action="" class="contenedorFormCarreras marginTop" id="FormCarreras">
+                        <input type="text" placeholder="Gran Premio" name="granPremio">
+                        <input type="text" placeholder="Fecha" name="fecha">
+                        <input type="text" placeholder="Ganador" name="ganador">
+                        <input type="text" placeholder="Equipo" name="equipo">
+                        <input type="text" placeholder="Mejor Tiempo Carrera" name="tiempoCarrera">
+                        <button id="botonAregarCarreras" class="botonPrincipal" type="submit">Agregar</button>
+
+                    </form>
+                </div>
+                <div class="contenedorTablaPosicionesAdmin">
+                    <table class="tablaDePosicionesAdmin">
+                        <thead class="">
+                            <tr class="rowCarrerasAdmin marginTop">
+                                <th class="celdaFijaAdmin">GRAND PRIX</th>
+                                <th class="desktop celdaFijaAdmin">FECHA</th>
+                                <th class="celdaFijaAdmin">GANADOR</th>
+                                <th class="celdaFijaAdmin">EQUIPO</th>
+                                <th class="celdaFijaAdmin">TIEMPO DE CARRERA</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tablaCarrerasAdmin" class="cuerpoTablaAdmin">
+                        </tbody>
+                    </table>
+                </div>
+
+            </main>
+
+    </div>
+    <script src="../js/carreras.js"></script>
+
+</body>
+
+</html>
